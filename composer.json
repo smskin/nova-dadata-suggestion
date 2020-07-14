@@ -1,0 +1,36 @@
+{
+    "name": "smskin/nova-dadata-suggestion",
+    "description": "A Laravel Nova address suggestion field",
+    "authors": [
+        {
+            "name": "Sergey Mikhaylov",
+            "email": "serg@msoinvest.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "fomvasss/laravel-dadata": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SMSkin\\DaDataSuggestion\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SMSkin\\DaDataSuggestion\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
