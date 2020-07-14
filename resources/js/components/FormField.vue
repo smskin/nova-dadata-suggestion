@@ -149,7 +149,7 @@
                 if (this.field.settlement !== undefined){
                     Nova.$emit(this.field.settlement + '-value', suggestion.data.settlement);
                 }
-                if (this.field.streetWithType !== undefined){
+                if (this.field.streetWithType !== undefined && suggestion.data.street !== null){
                     Nova.$emit(this.field.streetWithType + '-value', suggestion.data.street_type + '. ' + suggestion.data.street);
                 }
                 if (this.field.streetType !== undefined){
@@ -170,8 +170,8 @@
                 if (this.field.house !== undefined){
                     Nova.$emit(this.field.house + '-value', suggestion.data.house);
                 }
-                if (this.field.houseWithType !== undefined){
-                    Nova.$emit(this.field.houseWithType + '-value', suggestion.data.house_type + '. ' +suggestion.data.house);
+                if (this.field.houseWithType !== undefined && suggestion.data.house !== null){
+                    Nova.$emit(this.field.houseWithType + '-value', suggestion.data.house_type + '. ' + suggestion.data.house);
                 }
                 if (this.field.blockType !== undefined){
                     Nova.$emit(this.field.blockType + '-value', suggestion.data.block_type);
@@ -191,7 +191,7 @@
                 if (this.field.flat !== undefined){
                     Nova.$emit(this.field.flat + '-value', suggestion.data.flat);
                 }
-                if (this.field.flatWithType !== undefined){
+                if (this.field.flatWithType !== undefined && suggestion.data.flat !== null){
                     Nova.$emit(this.field.flatWithType + '-value', suggestion.data.flat_type + '. ' + suggestion.data.flat);
                 }
                 if (this.field.geoLat !== undefined){
