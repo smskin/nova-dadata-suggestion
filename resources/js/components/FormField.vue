@@ -87,130 +87,130 @@
                 this.value = suggestion.unrestricted_value;
 
                 if (this.field.postalCode !== undefined){
-                    Nova.$emit(this.field.postalCode + '-value', suggestion.data.postal_code);
+                    Nova.$emit(this.field.postalCode + '-value', suggestion.data.postal_code !== null ? suggestion.data.postal_code : '');
                 }
                 if (this.field.country !== undefined){
-                    Nova.$emit(this.field.country + '-value', suggestion.data.country);
+                    Nova.$emit(this.field.country + '-value', suggestion.data.country !== null ? suggestion.data.country : '');
                 }
                 if (this.field.federalDistrict !== undefined){
-                    Nova.$emit(this.field.federalDistrict + '-value', suggestion.data.federal_district);
+                    Nova.$emit(this.field.federalDistrict + '-value', suggestion.data.federal_district !== null ? suggestion.data.federal_district : '');
                 }
                 if (this.field.regionType !== undefined){
-                    Nova.$emit(this.field.regionType + '-value', suggestion.data.region_type);
+                    Nova.$emit(this.field.regionType + '-value', suggestion.data.region_type !== null ? suggestion.data.region_type : '');
                 }
                 if (this.field.regionTypeFull !== undefined){
-                    Nova.$emit(this.field.regionTypeFull + '-value', suggestion.data.region_type_full);
+                    Nova.$emit(this.field.regionTypeFull + '-value', suggestion.data.region_type_full !== null ? suggestion.data.region_type_full : '');
                 }
                 if (this.field.region !== undefined){
-                    Nova.$emit(this.field.region + '-value', suggestion.data.region);
+                    Nova.$emit(this.field.region + '-value', suggestion.data.region !== null ? suggestion.data.region : '');
                 }
                 if (this.field.areaType !== undefined){
-                    Nova.$emit(this.field.areaType + '-value', suggestion.data.area_type);
+                    Nova.$emit(this.field.areaType + '-value', suggestion.data.area_type !== null ? suggestion.data.area_type : '');
                 }
                 if (this.field.areaTypeFull !== undefined){
-                    Nova.$emit(this.field.areaTypeFull + '-value', suggestion.data.area_type_full);
+                    Nova.$emit(this.field.areaTypeFull + '-value', suggestion.data.area_type_full !== null ? suggestion.data.area_type_full : '');
                 }
                 if (this.field.area !== undefined){
-                    Nova.$emit(this.field.area + '-value', suggestion.data.area);
+                    Nova.$emit(this.field.area + '-value', suggestion.data.area !== null ? suggestion.data.area : '');
                 }
                 if (this.field.cityWithType !== undefined){
-                    Nova.$emit(this.field.cityWithType + '-value', suggestion.data.city_with_type);
+                    Nova.$emit(this.field.cityWithType + '-value', suggestion.data.city_with_type !== null ? suggestion.data.city_with_type : '');
                 }
                 if (this.field.cityType !== undefined){
-                    Nova.$emit(this.field.cityType + '-value', suggestion.data.city_type);
+                    Nova.$emit(this.field.cityType + '-value', suggestion.data.city_type !== null ? suggestion.data.city_type : '');
                 }
                 if (this.field.cityTypeFull !== undefined){
-                    Nova.$emit(this.field.cityTypeFull + '-value', suggestion.data.city_type_full);
+                    Nova.$emit(this.field.cityTypeFull + '-value', suggestion.data.city_type_full !== null ? suggestion.data.city_type_full : '');
                 }
                 if (this.field.city !== undefined){
-                    Nova.$emit(this.field.city + '-value', suggestion.data.city);
+                    Nova.$emit(this.field.city + '-value', suggestion.data.city !== null ? suggestion.data.city : '');
                 }
                 if (this.field.cityDistrictWithType !== undefined){
-                    Nova.$emit(this.field.cityDistrictWithType + '-value', suggestion.data.city_district_with_type);
+                    Nova.$emit(this.field.cityDistrictWithType + '-value', suggestion.data.city_district_with_type !== null ? suggestion.data.city_district_with_type : '');
                 }
                 if (this.field.cityDistrictType !== undefined){
-                    Nova.$emit(this.field.cityDistrictType + '-value', suggestion.data.city_district_type);
+                    Nova.$emit(this.field.cityDistrictType + '-value', suggestion.data.city_district_type !== null ? suggestion.data.city_district_type : '');
                 }
                 if (this.field.cityDistrictTypeFull !== undefined){
-                    Nova.$emit(this.field.cityDistrictTypeFull + '-value', suggestion.data.city_district_type_full);
+                    Nova.$emit(this.field.cityDistrictTypeFull + '-value', suggestion.data.city_district_type_full !== null ? suggestion.data.city_district_type_full : '');
                 }
                 if (this.field.cityDistrict !== undefined){
-                    Nova.$emit(this.field.cityDistrict + '-value', suggestion.data.city_district);
+                    Nova.$emit(this.field.cityDistrict + '-value', suggestion.data.city_district !== null ? suggestion.data.city_district : '');
                 }
                 if (this.field.settlementWithType !== undefined){
-                    Nova.$emit(this.field.settlementWithType + '-value', suggestion.data.settlement_with_type);
+                    Nova.$emit(this.field.settlementWithType + '-value', suggestion.data.settlement_with_type !== null ? suggestion.data.settlement_with_type : '');
                 }
                 if (this.field.settlementType !== undefined){
-                    Nova.$emit(this.field.settlementType + '-value', suggestion.data.settlement_type);
+                    Nova.$emit(this.field.settlementType + '-value', suggestion.data.settlement_type !== null ? suggestion.data.settlement_type : '');
                 }
                 if (this.field.settlementTypeFull !== undefined){
-                    Nova.$emit(this.field.settlementTypeFull + '-value', suggestion.data.settlement_type_full);
+                    Nova.$emit(this.field.settlementTypeFull + '-value', suggestion.data.settlement_type_full !== null ? suggestion.data.settlement_type_full : '');
                 }
                 if (this.field.settlement !== undefined){
-                    Nova.$emit(this.field.settlement + '-value', suggestion.data.settlement);
+                    Nova.$emit(this.field.settlement + '-value', suggestion.data.settlement !== null ? suggestion.data.settlement : '');
                 }
                 if (this.field.streetWithType !== undefined){
                     let street = null;
                     if (suggestion.data.street !== null){
                         street = suggestion.data.street_type + '. ' + suggestion.data.street;
                     }
-                    Nova.$emit(this.field.streetWithType + '-value', street);
+                    Nova.$emit(this.field.streetWithType + '-value', street !== null ? street : '');
                 }
                 if (this.field.streetType !== undefined){
-                    Nova.$emit(this.field.streetType + '-value', suggestion.data.street_type);
+                    Nova.$emit(this.field.streetType + '-value', suggestion.data.street_type !== null ? suggestion.data.street_type : '');
                 }
                 if (this.field.streetTypeFull !== undefined){
-                    Nova.$emit(this.field.streetTypeFull + '-value', suggestion.data.street_type_full);
+                    Nova.$emit(this.field.streetTypeFull + '-value', suggestion.data.street_type_full !== null ? suggestion.data.street_type_full : '');
                 }
                 if (this.field.street !== undefined){
-                    Nova.$emit(this.field.street + '-value', suggestion.data.street);
+                    Nova.$emit(this.field.street + '-value', suggestion.data.street !== null ? suggestion.data.street : '');
                 }
                 if (this.field.houseType !== undefined){
-                    Nova.$emit(this.field.houseType + '-value', suggestion.data.house_type);
+                    Nova.$emit(this.field.houseType + '-value', suggestion.data.house_type !== null ? suggestion.data.house_type : '');
                 }
                 if (this.field.houseTypeFull !== undefined){
-                    Nova.$emit(this.field.houseTypeFull + '-value', suggestion.data.house_type_full);
+                    Nova.$emit(this.field.houseTypeFull + '-value', suggestion.data.house_type_full !== null ? suggestion.data.house_type_full : '');
                 }
                 if (this.field.house !== undefined){
-                    Nova.$emit(this.field.house + '-value', suggestion.data.house);
+                    Nova.$emit(this.field.house + '-value', suggestion.data.house !== null ? suggestion.data.house : '');
                 }
                 if (this.field.houseWithType !== undefined){
                     let house = null;
                     if (suggestion.data.house !== null){
                         house = suggestion.data.house_type + '. ' + suggestion.data.house;
                     }
-                    Nova.$emit(this.field.houseWithType + '-value', house);
+                    Nova.$emit(this.field.houseWithType + '-value', house !== null ? house : '');
                 }
                 if (this.field.blockType !== undefined){
-                    Nova.$emit(this.field.blockType + '-value', suggestion.data.block_type);
+                    Nova.$emit(this.field.blockType + '-value', suggestion.data.block_type !== null ? suggestion.data.block_type : '');
                 }
                 if (this.field.blockTypeFull !== undefined){
-                    Nova.$emit(this.field.blockTypeFull + '-value', suggestion.data.block_type_full);
+                    Nova.$emit(this.field.blockTypeFull + '-value', suggestion.data.block_type_full !== null ? suggestion.data.block_type_full : '');
                 }
                 if (this.field.block !== undefined){
-                    Nova.$emit(this.field.block + '-value', suggestion.data.block);
+                    Nova.$emit(this.field.block + '-value', suggestion.data.block !== null ? suggestion.data.block : '');
                 }
                 if (this.field.flatType !== undefined){
-                    Nova.$emit(this.field.flatType + '-value', suggestion.data.flat_type);
+                    Nova.$emit(this.field.flatType + '-value', suggestion.data.flat_type !== null ? suggestion.data.flat_type : '');
                 }
                 if (this.field.flatTypeFull !== undefined){
-                    Nova.$emit(this.field.flatTypeFull + '-value', suggestion.data.flat_type_full);
+                    Nova.$emit(this.field.flatTypeFull + '-value', suggestion.data.flat_type_full !== null ? suggestion.data.flat_type_full : '');
                 }
                 if (this.field.flat !== undefined){
-                    Nova.$emit(this.field.flat + '-value', suggestion.data.flat);
+                    Nova.$emit(this.field.flat + '-value', suggestion.data.flat !== null ? suggestion.data.flat : '');
                 }
                 if (this.field.flatWithType !== undefined){
                     let flat = null;
                     if (suggestion.data.flat !== null){
                         flat = suggestion.data.flat_type + '. ' + suggestion.data.flat;
                     }
-                    Nova.$emit(this.field.flatWithType + '-value', flat);
+                    Nova.$emit(this.field.flatWithType + '-value', flat !== null ? flat : '');
                 }
                 if (this.field.geoLat !== undefined){
-                    Nova.$emit(this.field.geoLat + '-value', suggestion.data.geo_lat);
+                    Nova.$emit(this.field.geoLat + '-value', suggestion.data.geo_lat !== null ? suggestion.data.geo_lat : '');
                 }
                 if (this.field.geoLon !== undefined){
-                    Nova.$emit(this.field.geoLon + '-value', suggestion.data.geo_lon);
+                    Nova.$emit(this.field.geoLon + '-value', suggestion.data.geo_lon !== null ? suggestion.data.geo_lon : '');
                 }
             }
         },
