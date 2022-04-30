@@ -1,3 +1,8 @@
+## Release notes
+### 0.0.3
+Author of base library fomvasss/laravel-data (https://github.com/fomvasss/laravel-dadata) deleted it. I found its fork and change composer dependencies. At now library depend on inkover/laravel-data.
+
+
 ## Address suggestion field for Laravel Nova
 Based on https://github.com/fomvasss/laravel-dadata package
 
